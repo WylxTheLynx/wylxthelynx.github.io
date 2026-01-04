@@ -1,32 +1,73 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base */
 body {
-  background-color: #0f0f0f;
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
   color: #eaeaea;
-  font-family: 'Inter', Arial;
-  padding: 40px;
   line-height: 1.6;
 }
 
-.titulo {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 8px;
+/* Seções */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 24px;
 }
 
-.subtitulo {
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: #cccccc;
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  margin-top: 12px;
+  color: #bdbdbd;
+}
+
+/* Títulos */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/* Portfólio */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.grid img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Contato */
+.contato a {
+  color: #eaeaea;
+  text-decoration: none;
   opacity: 0.8;
 }
 
-.container {
-  max-width: 720px;
-  margin: 0 auto;
+.contato a:hover {
+  opacity: 1;
 }
