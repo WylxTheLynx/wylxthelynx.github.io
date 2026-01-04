@@ -12,3 +12,13 @@ body {
   padding: 40px;
   line-height: 1.6;
 }
+
+.titulo {
+  font-size: 2.5rem;
+}
+
+.subtitulo {
+  font-size: 1.1rem;
+  color: #cccccc;
+  opacity: 0.8;
+}
